@@ -1,0 +1,11 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "lab1,2,3,4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Doan Manh",
+  "license": "ISC"
+}
