@@ -12,4 +12,4 @@ http.createServer(function (request, response){
             response.end();
         }
     })
-}).listen(process.env.port || 3000 );
+}).listen((process.env.PORT));
