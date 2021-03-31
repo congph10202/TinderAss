@@ -24,7 +24,9 @@ app.use(express.static('css_new'));
 app.engine('.handlebars', expressHBS());
 
 app.set('view engine','.handlebars');
-
+app.get('', function (req,res){
+   res.render('index'); //file name
+});
 app.get('/home', function (req,res){
    res.render('index'); //file name
 });
