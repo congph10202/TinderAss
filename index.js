@@ -18,7 +18,7 @@ var express = require('express');
 var expressHBS = require('express-handlebars');
 
 var app =express();
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 3000);
 app.use(express.static('css_new'));
 
 app.engine('.handlebars', expressHBS());
@@ -30,9 +30,9 @@ app.get('', function (req,res){
 app.get('/home', function (req,res){
    res.render('index'); //file name
 });
-app.get('/signup', function (req,res){
+app.get('/signup.handlebars', function (req,res){
    res.render('signup'); //file name
 });
-app.get('/signin', function (req,res){
+app.get('/signin.handlebars', function (req,res){
    res.render('signin'); //file name
 });
