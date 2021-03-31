@@ -18,7 +18,7 @@ var express = require('express');
 var expressHBS = require('express-handlebars');
 
 var app =express();
-app.listen(4000);
+app.listen(process.env.PORT);
 app.use(express.static('css_new'));
 
 app.engine('.handlebars', expressHBS());
