@@ -199,5 +199,27 @@ app.get('/delete/:id', async (req,res)=>{
 //         res.status(500).send(error);
 //     }
 // })
+// {
+//     "name": "lab",
+//     "version": "1.0.0",
+//     "description": "Tinder cua Manh",
+//     "main": "index.js",
+//     "dependencies": {
+//     "body-parser": "^1.19.0",
+//         "express": "^4.17.1",
+//         "express-handlebars": "^5.3.0",
+//         "mogoose": "0.0.1-security",
+//         "mongoose": "^5.12.4"
+// },
+//     "devDependencies": {
+//     "multer": "^1.4.2"
+// },
+//     "scripts": {
+//     "start": "node index.js"
+// },
+//     "author": "Doan Manh",
+//     "license": "ISC"
+// }
+
 
 
