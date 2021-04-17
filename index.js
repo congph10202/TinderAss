@@ -36,7 +36,7 @@ var user = new mongoose.Schema({
     pet :String,
 })
  //
-app.listen(process.env.PORT  );
+app.listen(process.env.PORT);
 // console.log(`http://localhost:${7000}`);
 app.use(express.static('css_new'));
 
