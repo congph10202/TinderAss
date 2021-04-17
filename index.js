@@ -98,7 +98,7 @@ app.post('/addUsers', function (req,res){
             address :req.body.address,
             phone :req.body.phone,
             hobbies :req.body.hobbies,
-            pet : req.body.hobbies,
+            pet : req.body.pet,
         }).save(function (error) {
             if (error) {
                 console.log('Loi' + error);
