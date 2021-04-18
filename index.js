@@ -36,7 +36,7 @@ var user = new mongoose.Schema({
     pet :String,
 })
  //
-app.listen(process.env.PORT);
+app.listen(process.env.PORT|| 3000);
 // console.log(`http://localhost:${7000}`);
 app.use(express.static('css_new'));
 
@@ -171,7 +171,7 @@ app.get('/delete/:id', async (req,res)=>{
                 res.status(404).send('No item found');
             }
             else{
-                res.redirect('/list')
+                res.redirect('/l_user')
             }
         }
         catch (err){
